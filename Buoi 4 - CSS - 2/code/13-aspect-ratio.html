@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aspect-ratio</title>
+  <style>
+    body {
+      margin: 24px;
+    }
+
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .container {
+      max-width: 320px;
+    }
+
+    /* padding  */
+    .aspect-ratio-pd {
+      position: relative;
+    }
+
+    .aspect-ratio-pd--16-9 {
+      padding-bottom: 56.25%; /* 16:9 = 9 / 16 * 100 */
+    }
+
+    .aspect-ratio-pd--3-4 {
+      padding-bottom: 75%; /* 3:4 = 3 / 4 * 100 */
+    }
+
+    .aspect-ratio-pd--1-1 {
+      padding-bottom: 100%; /* 1:1 = 1 / 1 * 100 */
+    }
+
+    .aspect-ratio-pd-img {
+      position: absolute;
+    }
+
+    /* Aspect-ratio */
+    .aspect-ratio-16-9 {
+      aspect-ratio: 16/9; 
+    }
+
+    .aspect-ratio-3-4 {
+      aspect-ratio: 3/4; 
+    }
+
+    .aspect-ratio-1-1 {
+      aspect-ratio: 1/1; 
+    }
+
+  </style>
+</head>
+<body>
+  
+  <!-- padding -->
+  <div class="container">
+    <div class="aspect-ratio-pd aspect-ratio-pd--16-9">
+      <img class="aspect-ratio-pd-img" src="https://source.unsplash.com/random" alt="Image…">
+    </div>
+  </div>
+
+  <!-- Aspect-ratio -->
+  <div style="margin-top: 24px" class="container">
+    <div class="aspect-ratio-16-9">
+      <img src="https://source.unsplash.com/random" alt="Image…">
+    </div>
+  </div>
+
+</body>
+</html>

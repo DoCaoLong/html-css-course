@@ -1,0 +1,103 @@
+html {
+  font-size: 62.5%;
+  background-color: #f3faff;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  /* rem là đơn vị phụ thuộc vào thuộc tính font size của html */
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  padding: 2rem;
+}
+.checkbox {
+  padding: 1rem;
+}
+.checkbox_input {
+  display: none;
+}
+.checkbox_label {
+  position: relative;
+  padding-left: 3rem;
+  cursor: pointer;
+}
+.checkbox_label::before {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  background-color: #eee;
+  border: 2px solid #b7c1cb;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border-radius: 3px;
+}
+.checkbox_label:hover::before {
+  background-color: #ccc;
+  transition: 0.25s ease;
+}
+.checkbox_label::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 10px;
+  height: 5px;
+  transform: rotate(-45deg);
+  border-left: 3px solid white;
+  border-bottom: 3px solid white;
+  opacity: 0;
+  visibility: hidden;
+}
+.checkbox_input:checked + .checkbox_label::after {
+  opacity: 1;
+  visibility: visible;
+}
+.checkbox_input:checked + .checkbox_label::before {
+  background-color: #fc556f;
+  border: 2px solid #fc556f;
+}
+.checkbox_input:checked + .checkbox_label:hover:before {
+  background-color: #b93a4d;
+  border: 2px solid #b93a4d;
+}
+
+/* radio */
+
+.radio {
+  padding: 1rem;
+}
+.radio_input {
+  display: none;
+}
+.radio_input:checked + .radio_label:before {
+  background-color: #fc556f;
+  box-shadow: 0 0 0 4px #f3faff, 0 0 0 6px #fc556f;
+}
+.radio_input:checked + .radio_label:hover:before {
+  background-color: #b93a4d;
+}
+.radio_label {
+  position: relative;
+  padding-left: 3rem;
+  cursor: pointer;
+}
+.radio_label::before {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #eee;
+  box-shadow: 0 0 0 4px #eee, 0 0 0 6px #b7c1cb;
+  border-radius: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  transition: 0.25s ease;
+}
+.radio_label:hover::before {
+  background-color: #ccc;
+}

@@ -1,0 +1,24 @@
+.colors {
+  margin-left: 40px;
+  margin-top: 40px;
+}
+.red, .green, .blue {
+  width: 100px;
+  height: 100px;
+  color: white;
+  line-height: 100px;
+  text-align: center;
+}
+.red {
+  background: red;
+}
+.green {
+  margin-top: -40px;
+  margin-left: 60px;
+  background: green;
+}
+.blue {
+  margin-top: -40px;
+  margin-left: 120px;
+  background: blue;
+}

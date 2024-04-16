@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <!-- min()  -->
+        <!-- <h1 style="padding:24px 24px 0 24px">Container Width <span style="color: red; font-weight: bold;" class="container-w-text"></span></h1>
+        <div class="min-fuction">
+            <h1>The min() Function</h1>
+
+            <p>
+                Use min() to set the width of #div1 to whichever value is
+                smallest, 50% or 600px:
+            </p>
+
+            <div><span class="clientWidth1"></span></div>
+
+            <p>Resize the browser window to see the effect.</p>
+        </div> -->
+
+        <!-- max() -->
+        <!-- <div class="max-function">
+            <h1>The max() Function</h1>
+
+            <p>
+                Use max() to set the width of #div1 to whichever value is
+                largest, 50% or 600px:
+            </p>
+
+            <div><span class="clientWidth"></span></div>
+
+            <p>Resize the browser window to see the effect.</p>
+        </div> -->
+
+        <!-- clamp() -->
+        <div class="content">
+            <h1 class="heading">Heading Clamp</h1>
+        </div>
+    </body>
+    <script>
+        // Function to update width when resizing
+        function updateWidth() {
+            let container = document.querySelector(".min-fuction");
+            let containerText = document.querySelector(".container-w-text");
+            containerText.innerText = `${container.clientWidth}px`;
+            // Select the child element whose width you want to measure
+            let minFunction = document.querySelector(".min-fuction div");
+            let maxFunction = document.querySelector(".max-function div");
+            // Get its clientWidth
+            var width2 = minFunction.clientWidth;
+            var width = maxFunction.clientWidth;
+            // Select the element with class 'clientWidth'
+            var paragraphContent1 = document.querySelector(".clientWidth1");
+            var paragraphContent = document.querySelector(".clientWidth");
+            // Check if the element exists before setting its text content
+            if(paragraphContent){
+                paragraphContent.innerText = `${width}px`;
+            }
+            if(paragraphContent1){
+                paragraphContent1.innerText = `${width2}px`;
+            }
+        }
+
+        // Call updateWidth function when the window is resized
+        window.addEventListener("resize", updateWidth);
+
+        // Initial call to set initial width
+        updateWidth();
+    </script>
+</html>

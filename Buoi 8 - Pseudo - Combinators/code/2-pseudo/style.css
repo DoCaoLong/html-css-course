@@ -1,0 +1,79 @@
+html {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+.active {
+    /* background-color: aqua; */
+}
+.active:visited {
+    background-color: blue;
+}
+
+.focus {
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    font-size: 24px;
+}
+.focus:focus {
+    /* outline: 0; */
+    background-color: green;
+    color: yellow;
+}
+.focus:focus::placeholder {
+    color: red;
+}
+
+.list {
+    background-color: black;
+    width: max-content;
+    height: 100px;
+    display: flex;
+}
+.item {
+    background-color: gray;
+    width: 100px;
+    height: 100px;
+}
+
+.item:not(:nth-child(3)) {
+    border-left: 3px solid black;
+}
+
+/* .item:nth-of-type(2n + 3) {
+    background-color: aqua;
+} */
+
+/* has */
+.has {
+    background-color: black;
+    width: max-content;
+    height: 100px;
+    display: flex;
+    gap: 14px;
+    padding: 14px;
+    border-radius: 16px;
+}
+.has_item {
+    background-color: #ff69b4;
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    transition: background-color 200ms;
+    cursor: pointer;
+}
+.has:has(.has_item:hover) > .has_item:not(:hover) {
+    background-color: #ffc3e1;
+}
+
+.item:nth-of-type(odd) {
+    background-color: aqua;
+}
+
+.first-line::first-letter {
+    font-size: 40px;
+}
+.first-line::selection {
+    user-select: none;
+}

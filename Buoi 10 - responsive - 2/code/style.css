@@ -1,0 +1,117 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+input,
+select,
+textarea {
+    background-color: transparent;
+    outline: none;
+}
+button {
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+}
+body {
+    min-height: 100vh;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+}
+html {
+    /* 100 / 16 */
+    font-size: 62.5%;
+}
+:root {
+    --primary-cl: black;
+    --secondary-cl: #eee;
+}
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    /* font-size: 2rem; */
+}
+
+.min-fuction,
+.max-function {
+    background-color: var( --secondary-cl);
+    max-width: 1440px;
+    height: 100%;
+    margin: 24px;
+}
+
+.clientWidth ,.clientWidth1{
+    font-weight: bold;
+    color:#fff
+}
+
+/* min() */
+.min-fuction div {
+    background-color: var(--primary-cl);
+    height: 100px;
+    /* 720px */
+    width: min(600px, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* max() */
+.max-function div {
+    background-color: var(--primary-cl);
+    height: 100px;
+    /* 1440px / 2 = 720 */
+    /* 720 700 680 610 590px */
+    width: max(600px, 50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* clamp() */
+.content{
+    /* max-width: 1000px; */
+    background-color: black;
+}
+.heading{
+    /* width: clamp(100px, 1200px, 1000px); */
+    height: 200px;
+    /* font-size: 20px; */
+    background-color: var(--secondary-cl);
+    font-size: clamp(1rem, 2vw + 1rem, 2.25rem);
+}
+
+/* retina */
+/* @media screen and (max-width: 1279.98px) {
+
+} */
+
+/* tablet */
+@media screen and (max-width: 1023.98px) {
+
+}
+
+/* mobile */
+@media screen and (max-width: 767.98px) {
+
+}
+
+/* iphone 5  */
+/* @media screen and (max-width: 767.98px) {
+
+} */
+

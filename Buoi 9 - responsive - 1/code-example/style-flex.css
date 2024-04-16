@@ -1,0 +1,114 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+input,
+select,
+textarea {
+    background-color: transparent;
+    outline: none;
+}
+button {
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+}
+body {
+    min-height: 100vh;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 24px;
+    padding: 24px;
+}
+.item {
+    width: calc(25% - 24px);
+    margin-right: 24px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 16px;
+    border: 1px solid #ccc;
+}
+.item__img {
+    position: relative;
+    aspect-ratio: 16/9;
+    border-radius: 16px 16px 0 0;
+    overflow: hidden;
+}
+.item__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item__content {
+    padding: 14px;
+    border-radius: 0 0 16px 16px;
+    overflow: hidden;
+}
+.item__name {
+    font-size: 20px;
+    font-weight: 500;
+}
+.item__desc {
+    font-size: 16px;
+    margin-top: 14px;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+.item__btn {
+    background-color: blueviolet;
+    width: max-content;
+    margin-left: auto;
+    padding: 8px 16px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+@media screen and (max-width: 1023.98px) {
+    .list {
+        margin-left: 24px;
+        padding: 24px 0 0 0;
+    }
+    .item {
+        width: calc(50% - 24px);
+        margin-bottom: 24px;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .list {
+        padding: 24px 24px 24px 0;
+    }
+    .item {
+        width: calc(100%);
+        margin-right: 0;
+    }
+}

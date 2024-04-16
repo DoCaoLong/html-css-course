@@ -1,0 +1,38 @@
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --primary-cl: rgba(171, 255, 45, 0.934);
+    --secondary-cl: yellow;
+    --third-cl: blue;
+}
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+.min-fuction div {
+    background-color: var(--primary-cl);
+    height: 100px;
+    width: min(50%, 300px);
+}
+
+.max-function div {
+    background-color: var(--primary-cl);
+    height: 100px;
+    width: max(50%, 300px);
+}
+
+.calc {
+    width: 373px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+}
+.calc-item {
+    width: calc(100% - 60px);
+    background-color: var(--primary-cl);
+    height: 50px;
+}

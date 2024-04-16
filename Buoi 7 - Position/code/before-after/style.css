@@ -1,0 +1,104 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+/* span{
+  font-size: 48px;
+} */
+/* span::before {
+  content: "before ";
+  font-weight: bold;
+}
+span::after {
+  content: " after";
+  font-style: italic;
+} */
+
+h2{
+  display: block;
+  margin: 50px;
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  position: relative;
+  background-color: aqua;
+}
+h2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #e74c3c;
+  transition: .25s;
+} 
+
+h2:hover:before {
+  width: 100%;
+}
+.wraper{
+  margin: 24px;
+  display: flex;
+  border: 2px solid #ccc;
+  width: 300px;
+  border-radius: 8px;
+  position: relative;
+}
+input{
+  width: 100%;
+  border: 0;
+  outline: none;
+  margin-left: 24px;
+  padding: 8px;
+}
+.bx-user{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+.wraper::after{
+  content: "";
+  position: absolute;
+  right: -70px;
+  width: 60px;
+  height: 100%;
+  background-color: #ccc;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,40 @@
+// @use 'varible';
+@import './reset';
+@import './varible';
+@import './mixin';
+html{
+    font-size: 62.5%;
+}
+.dropdown{
+    width: 100px;
+    background-color: aqua;
+    .dropdown__select{
+        color: $primary-color;
+        background-color: brown;
+        font-size: 2rem;
+    }
+    .dropdown__select{
+        height: 100px;
+    }
+    .dropdown__select--red{
+        background-color: $color-red;
+    }
+    &__item{
+        background-color: $color-green-yellow;
+    }
+}
+
+%abs-center {
+    border: 2px solid #ccc;
+    padding: 10px;
+    background-color: #333;
+}
+
+.info {
+    @include mid($flex:false);
+    .info-item{
+        @extend %abs-center;
+        width: 50px;
+        height: 50px;
+    }
+}

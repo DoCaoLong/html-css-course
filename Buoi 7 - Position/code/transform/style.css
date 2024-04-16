@@ -1,0 +1,69 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* div.a {
+  width: 150px;
+  height: 80px;
+  background-color: yellow;
+  transform: rotate(0deg);
+}
+
+div.b {
+  width: 150px;
+  height: 80px;
+  background-color: yellow;
+  transform: skewX(10deg);
+} */
+/* 
+div.c {
+  width: 150px;
+  height: 80px;
+  background-color: yellow;
+  transform: scale(1.1);
+} */
+
+.block{
+  width: 100%;
+  height: 200px;
+  background-color: black;
+  position: relative;
+}
+.block__item{
+  background-color: rgba(205, 43, 43, 0.5);
+  position: absolute;
+  /* transform: translate(50px, 50px) rotate(45deg) scale(2); */
+}

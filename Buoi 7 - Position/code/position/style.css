@@ -1,0 +1,121 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* position && position-abssolute */
+/* .parent{
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+  padding: 14px;
+  top: 40px;
+  left: 40px
+}
+.parent__element1{
+  width: 100%;
+  height: 50%;
+  background-color: crimson;
+}
+.parent__element2{
+  width: 100%;
+  height: 50%;
+  background-color: chocolate;
+  position: fixed; 
+}
+.parent__item2 p {
+  position: absolute;
+  background-color: rgba(225, 225, 225, 0.8);
+  padding: 16px 16px;
+  font-size: 24px;
+  top: 0;
+  left: 0;
+ 
+  color: #fff;
+} */
+/* close position && position-abssolute */
+
+/* fixed */
+/* .fixed ul{
+  width: 100%;
+  height: 2000px;
+  background-color: aqua;
+}
+.fixed header{
+  width: 200px;
+  height: 100px;
+  background-color: black;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  right: 0;
+}
+.fixed header{
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  font-size: 24px;
+  color: #fff
+} */
+/* close fixed */
+
+/* sticky */
+/* .skicky{
+  background-color: cadetblue;
+  height: 2000px;
+}
+.header{
+  height: 80px;
+  width: 100%;
+  background-color: black;
+}
+.banner{
+  background-color: brown;
+  height: 200px;
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.banner__item{
+  position: sticky;
+  top: 20px;
+  left: 0;
+  right: 0;
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+} */
+/* close sticky */

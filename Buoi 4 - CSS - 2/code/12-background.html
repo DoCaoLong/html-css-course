@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      border: 1px solid #000;
+    }
+
+    /* background-color */
+    #example1 {
+      /* background-color: greenyellow; */
+      background-image: radial-gradient(circle, #ffcc00, #ff6600);
+    }
+
+    /* background-image and background-repeat */
+    #repeat {
+      background-image: url('https://source.unsplash.com/random');
+      background-repeat: repeat;
+      /* width: 1000px;
+      height: 1000px; */
+    }
+
+    /* background-position */
+    #position {
+      background-image: url('https://source.unsplash.com/random');
+      background-position: center;
+    }
+
+    /* background-size */
+    #size {
+      background-image: url('https://source.unsplash.com/random');
+      background-size: cover;
+    }
+
+    /* background-attachment */
+    #attachment {
+      background-image: url('https://source.unsplash.com/random');
+      background-attachment: fixed;
+    }
+
+    /* background-origin */
+    #origin {
+      background-image: url('https://source.unsplash.com/random');
+      background-origin: content-box;
+    }
+
+    /* background-clip */
+    #clip {
+      background-image: url('https://source.unsplash.com/random');
+      background-clip: padding-box;
+    }
+
+    /* background-blend-mode */
+    #blend-mode {
+      background-image: url('https://source.unsplash.com/random');
+      background-color: red;
+      background-blend-mode: difference;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>normal</h1>
+  <div id="example1"></div>
+
+  <h1>repeat</h1>
+  <div id="no-repeat"></div>
+
+  <h1>position</h1>
+  <div id="position"></div>
+
+  <h1>size</h1>
+  <div id="size"></div>
+
+  <h1>attachment</h1>
+  <div id="attachment"></div>
+
+  <h1>origin</h1>
+  <div id="origin"></div>
+
+  <h1>clip</h1>
+  <div id="clip"></div>
+
+  <h1>blend-mode</h1>
+  <div id="blend-mode"></div>
+
+</body>
+</html>

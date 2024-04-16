@@ -1,0 +1,86 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+
+/*BOXED LAYOUT*/
+/*BOXED LAYOUT*/
+html {
+  font-size: 62.5%;
+}
+
+.dropdown {
+  width: 100px;
+  background-color: aqua;
+}
+.dropdown .dropdown__select {
+  color: #333;
+  background-color: brown;
+  font-size: 2rem;
+}
+.dropdown .dropdown__select {
+  height: 100px;
+}
+.dropdown .dropdown__select--red {
+  background-color: red;
+}
+.dropdown__item {
+  background-color: chartreuse;
+}
+
+.info .info-item {
+  border: 2px solid #ccc;
+  padding: 10px;
+  background-color: #333;
+}
+
+.info {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  position: absolute;
+}
+.info .info-item {
+  width: 50px;
+  height: 50px;
+}/*# sourceMappingURL=style.css.map */

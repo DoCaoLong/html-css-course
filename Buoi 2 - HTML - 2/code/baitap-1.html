@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bài tập 1</title>
+        <style>
+            /* Reset */
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            ul {
+                list-style: none;
+            }
+            body {
+                color: #333;
+                font-family: Helvetica, sans-serif;
+                font-size: 16px;
+            }
+
+            /* Layout */
+            .learn {
+                margin: 20px auto;
+                text-align: center;
+                width: 800px;
+            }
+            .learn-logo {
+                margin-bottom: 15px;
+                margin: 0 auto;
+                width: 190px;
+            }
+
+            .learn-logo img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .learn-title {
+                font-size: 45px;
+                font-weight: normal;
+                margin-bottom: 25px;
+            }
+
+            .learn-title strong {
+                color: #00aeef;
+                font-weight: 600;
+            }
+
+            .learn-text {
+                margin-bottom: 40px;
+            }
+
+            .learn-btns {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 24px;
+            }
+            .learn-btns .learn-btn a {
+                display: inline;
+                margin: 0 12px;
+                text-decoration: none;
+                color: #fff;
+            }
+            .learn-btns .learn-btn {
+                background-color: #2d3032;
+                border-radius: 4px;
+                display: inline-block;
+                padding: 16px 24px;
+                transition: 0.3s background-color;
+                border: 0;
+                outline: none;
+            }
+            .learn-btns .learn-btn:hover {
+                background-color: #00aeef;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="learn">
+            <p class="learn-logo">
+                <img src="./logo.jpg" alt="" />
+            </p>
+            <h2 class="learn-title">
+                Learn <strong>Programming</strong> at <strong>Attlab</strong>
+            </h2>
+            <p class="learn-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+                incidunt?
+            </p>
+            <div class="learn-btns">
+                <button class="learn-btn">
+                    <a href="./">View Plans</a>
+                </button>
+                <button class="learn-btn">
+                    <a href="./">All Features</a>
+                </button>
+            </div>
+        </section>
+    </body>
+</html>

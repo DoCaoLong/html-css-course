@@ -1,0 +1,65 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+
+}
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input,
+select,
+textarea {
+    background-color: transparent;
+    outline: none;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* button {
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+} */
+body {
+    min-height: 100vh;
+    font-size: 16px;
+    line-height: 1;
+}
+
+table{
+    width: 100%;
+}
+
+table, tr, td, th{
+    border:  1px solid red;
+    /* border-collapse: collapse; */
+    /* border-radius: 10px; */
+}
+td, th {
+    border-style: dashed;
+}
+/* tr:nth-child(even) {
+    background-color: #D6EEEE;
+} */

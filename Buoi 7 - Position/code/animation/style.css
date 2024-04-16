@@ -1,0 +1,86 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+input,
+select,
+textarea {
+    background-color: transparent;
+    outline: none;
+}
+button {
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+}
+body {
+    min-height: 100vh;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes slidein {
+    /* from {
+    }
+    to {
+    }
+
+    0% {
+    }
+    100% {
+    } */
+    0% {
+        transform: scale(0);
+        background-color: yellow;
+    }
+    25% {
+        transform: scale(2);
+        background-color: #007bff;
+    }
+    50% {
+        transform: scale(1.5);
+        background-color: purple;
+    }
+    100% {
+        transform: scale(0.5);
+        background-color: green;
+    }
+}
+
+.animation {
+    animation: slidein 10s linear infinite;
+}
+
+.animated-element {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: slidein 10s linear infinite;
+    /* animation-name: slidein;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; */
+    /* animation-delay: 2s; */
+    /* animation-fill-mode: forwards; */
+    animation-direction: alternate;
+}

@@ -1,0 +1,18 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 2rem;
+}
+
+.child-combinator > p {
+    background-color: yellow;
+}
+
+.adjacent-sibling div + p {
+    background-color: yellow;
+}
+
+.general-sibling div ~ p {
+    background-color: yellow;
+}
